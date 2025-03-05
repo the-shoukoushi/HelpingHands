@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="donation">
+        <!-- navbar.html -->
+        <header>
+            <div id="navbar-placeholder"></div>
+            <script>
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            </script>
+        </header>
+
+        <section class="header">
+            <div class="header-text">
+                <h1>Making a donation for our children</h1>
+                <p>When you donate, you’re supporting effective care for children with special needs—an investment in
+                    the leaders of tomorrow.</p>
+                <button class="primary-button">Donate now</button>
+            </div>
+        </section>
+
+        <section class="donation-info">
+            <h2>How we use your donation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, mi quis viverra ornare, eros dolor
+                interdum nulla.</p>
+        </section>
+
+        <section class="cta">
+            <h2>You can contribute to provide a place for children with special needs!</h2>
+            <button class="primary-button">Join as a volunteer</button>
+            <button class="secondary-button">Donate</button>
+        </section>
+
+        <!-- footer.html -->
+        <footer>
+            <div id="footer-placeholder"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>

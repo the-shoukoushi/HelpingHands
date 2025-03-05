@@ -1,0 +1,122 @@
+/* Footer Styling */
+.footer {
+    background: #0B0706;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Logo Section */
+.footer-logo {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: center;
+    align-items: center;
+    color: white;
+}
+
+.logo-i {
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #F2C94C;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #F2C94C;
+}
+
+.footer-column a {
+    display: block;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+/* Subscribe Section */
+.footer-subscribe {
+    text-align: left;
+}
+
+.footer-subscribe h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 12px;
+}
+
+.subscribe-form input {
+    width: 260px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(235, 240, 249, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscribe-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form input:focus {
+    border-color: #F2C94C;
+    outline: none;
+}
+
+.subscribe-form button {
+    background: #F2C94C;
+    color: #1D2130;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+.subscribe-form button:hover {
+    background: #e6b847;
+}

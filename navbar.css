@@ -1,0 +1,136 @@
+/* Ensure navbar styles remain intact */
+.navbar-container .navbar {
+    width: 100%;
+    height: 80px;
+    padding: 16px 80px;
+    background: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Login Button */
+.navbar-container .login-button {
+    background: transparent;
+    color: #1D2130 !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 2px solid #1D2130 !important;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-container .login-button:hover {
+    background: #1D2130 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* Logo */
+.navbar-container .navbar-logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1D2130 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.navbar-container .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-container .nav-links li {
+    position: relative;
+}
+
+.navbar-container .nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #525560 !important;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-container .nav-links li a:hover {
+    color: #1D2130 !important;
+}
+
+/* Underline Hover Effect */
+.navbar-container .nav-links li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1D2130;
+    display: block;
+    margin: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-container .nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Call to Action Button */
+.navbar-container .nav-button {
+    background: #F2C94C !important;
+    color: white !important;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-container .nav-button:hover {
+    background: #333645 !important;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar-container .navbar {
+        padding: 16px 50px;
+    }
+
+    .navbar-container .nav-links {
+        gap: 20px;
+    }
+
+    .navbar-container .nav-button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container .navbar {
+        padding: 16px 30px;
+    }
+
+    .navbar-container .nav-links {
+        display: none;
+    }
+
+    .navbar-container .nav-button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}

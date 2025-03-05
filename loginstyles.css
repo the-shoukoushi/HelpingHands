@@ -1,0 +1,140 @@
+/* 🌍 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 🌌 Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FCEDC6, #F2C94C);
+}
+
+/* 📌 Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* 📜 Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 📝 Form Titles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1D2130;
+}
+
+/* 🔘 Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #1D2130;
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(29, 33, 48, 0.6);
+}
+
+input:focus {
+    outline: none;
+    border-color: #F2C94C;
+    box-shadow: 0 0 8px rgba(242, 201, 76, 0.5);
+}
+
+/* 🎯 Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1D2130;
+    background: linear-gradient(135deg, #F2C94C, #FFB547);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #F2C94C, #FF9E44);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* 📌 Toggle Between Login & Signup */
+.toggle-form {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1D2130;
+}
+
+.toggle-form span {
+    color: #e78631;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-form span:hover {
+    text-decoration: underline;
+}
+
+/* 📌 Hide Form Initially */
+.hidden {
+    display: none;
+}
+
+/* 🎬 Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    .form-box {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}

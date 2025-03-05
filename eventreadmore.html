@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Read More</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="event-read-more">
+        <!-- navbar.html -->
+        <header>
+            <div id="navbar-placeholder"></div>
+            <script>
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            </script>
+        </header>
+
+        <header class="header">
+            <div class="header-bg"></div>
+            <h1 class="header-title">A day with our wonderful children</h1>
+            <div class="event-info">
+                <div class="event-location">
+                    <svg width="22" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.6364 10.8182C20.6364 18.4545 10.8182 25 10.8182 25C10.8182 25 1 18.4545 1 10.8182C1 8.21424 2.03441 5.71695 3.87568 3.87568C5.71694 2.03441 8.21424 1 10.8182 1C13.4221 1 15.9194 2.03441 17.7607 3.87568C19.6019 5.71695 20.6364 8.21424 20.6364 10.8182Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M10.822 14.0918C12.6295 14.0918 14.0948 12.6266 14.0948 10.8191C14.0948 9.01164 12.6295 7.54639 10.822 7.54639C9.01457 7.54639 7.54932 9.01164 7.54932 10.8191C7.54932 12.6266 9.01457 14.0918 10.822 14.0918Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Opp Opolo round about, Yenagoa, Bayelsa, Nigeria</span>
+                </div>
+                <div class="event-date">
+                    <svg width="25" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.2357 1V5.7999M7.63519 1V5.7999M1.63672 10.6001H23.2363M4.03667 3.40049H20.8363C22.1618 3.40049 23.2363 4.47499 23.2363 5.80044V22.6001C23.2363 23.9256 22.1618 25 20.8363 25H4.03667C2.71121 25 1.63672 23.9256 1.63672 22.6001V5.80044C1.63672 4.47499 2.71121 3.40049 4.03667 3.40049Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>April 13, 2022 8:30 AM</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Other Events Section -->
+        <section class="other-events">
+            <h2 class="section-title">Other Events</h2>
+            <hr class="title-line">
+
+            <div class="event">
+                <div class="event-card">
+                    <div class="event-date-box">
+                        <span class="event-day">23</span>
+                        <span class="event-month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Say no to plastic usage and save the planet</h3>
+                    </div>
+                    <div class="event-arrow">
+                        <svg width="19" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.4571 8.70711C18.8476 8.31658 18.8476 7.68342 18.4571 7.29289L12.0931 0.928933C11.7026 0.538409 11.0695 0.538409 10.6789 0.928933C10.2884 1.31946 10.2884 1.95262 10.6789 2.34315L16.3358 8L10.6789 13.6569C10.2884 14.0474 10.2884 14.6805 10.6789 15.0711C11.0695 15.4616 11.7026 15.4616 12.0931 15.0711L18.4571 8.70711ZM0.25 9L17.75 9L17.75 7L0.25 7L0.25 9Z"
+                                fill="#1D2130" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-card">
+                    <div class="event-date-box">
+                        <span class="event-day">30</span>
+                        <span class="event-month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title">Monthly orphanage visits</h3>
+                    </div>
+                    <div class="event-arrow">
+                        <svg width="19" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.4571 8.70711C18.8476 8.31658 18.8476 7.68342 18.4571 7.29289L12.0931 0.928933C11.7026 0.538409 11.0695 0.538409 10.6789 0.928933C10.2884 1.31946 10.2884 1.95262 10.6789 2.34315L16.3358 8L10.6789 13.6569C10.2884 14.0474 10.2884 14.6805 10.6789 15.0711C11.0695 15.4616 11.7026 15.4616 12.0931 15.0711L18.4571 8.70711ZM0.25 9L17.75 9L17.75 7L0.25 7L0.25 9Z"
+                                fill="#1D2130" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer.html -->
+        <footer>
+            <div id="footer-placeholder"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>
